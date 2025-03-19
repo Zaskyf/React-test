@@ -1,0 +1,317 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/*Все тело*/
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: Arial, sans-serif;
+}
+/*Конец тела*/
+
+/* НАЧАЛО ГОЛОВЫ */
+header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #688ebd;
+  padding: 20px 8px;
+  z-index: 200;
+  position: sticky; /* делает заголовок липким */
+  top: 0;
+}
+
+/* Контейнер заголовка */
+header > .header-contaner {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+/* КОНЕЦ ГОЛОВЫ*/
+
+/*НАЧАЛО ПОСИКОВОЙ СИСТЕМЫ*/
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+}
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #688ebd;
+  border-radius: 5px 0 0 5px;
+}
+.search-bar button {
+  background-color: #ffffe0;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 2px solid #ffffe0;
+}
+.search-bar button i {
+  font-size: 10px;
+}
+
+.cart-icon,
+.search-bar {
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 20px;
+  color: black;
+}
+/*КОНЕЦ ПОИСКОВОЙ СИСТЕМЫ /
+
+
+
+/*НАЧАЛО КОРЗИНЫ   */
+.cartbu {
+  margin-top: 10px; /* Отступ сверху */
+
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 16px; /* Размер шрифта */
+  color: #688ebd; /* Цвет текста */
+  background-color: #f0f8ff; /* Светлый цвет фона */
+  padding: 12px 20px; /* Увеличенные отступы для кнопок */
+  border-radius: 5px; /* Закругленные углы */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Курсор в виде руки */
+  transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+}
+
+.cartbu:hover {
+  background-color: #688ebd; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+}
+
+/* Эффект при наведении для кнопки */
+button.cartbu:hover {
+  background-color: #688ebd; /* Цвет фона при наведении на кнопку */
+  color: white; /* Цвет текста при наведении на кнопку */
+}
+.cart {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  box-shadow: 3px 2px 5px rgba(0.2, 0.2, 0.2, 0.2);
+  background-color: #fff;
+  padding: 10px;
+  width: 450px;
+  display: inline-flex;
+  border-radius: 5px;
+  border: 2px solid #688ebd;
+  display: none;
+  z-index: 9000;
+}
+.cart-item {
+  border-bottom: 1px solid #b4cae6;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boxadd {
+  display: flex;
+  align-items: center;
+}
+
+.boxadd input {
+  width: 40px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #b4cae6;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.sub,
+.ad {
+  background-color: #688ebd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub:hover,
+.add:hover {
+  background-color: #5a7cb3;
+}
+
+/*КОНЕЦ  КОРЗИНЫ  */
+/*НАЧАЛО КАТАЛОГА*/
+
+.cat {
+  margin-top: 10px; /* Отступ сверху */
+  width: 165px;
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 20px; /* Размер шрифта */
+  color: #ffffe0; /* Цвет текста при наведении */
+
+  background-color: #688ebd; /* Цвет фона при наведении */
+  padding: 12px 20px; /* Увеличенные отступы для кнопок */
+  border-radius: 5px; /* Закругленные углы */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Курсор в виде руки */
+  transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+.cat:hover {
+  background-color: #ffffe0; /* Светлый цвет фона */
+
+  color: #688ebd; /* Цвет текста */
+}
+.catalog h6 {
+  color: #688ebd;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  width: 90%;
+  height: 40px;
+  background-color: #ffffe0; /* Желтый */
+  border-radius: 9px;
+  margin-top: 25px;
+
+  padding: 5px;
+  margin: 0;
+}
+
+.button-style {
+  position: relative;
+  border-radius: 8px;
+  width: 190px;
+
+  left: 5px;
+  right: 10px;
+  font-size: 20px;
+}
+.button-style:hover,
+.button-style:focus {
+  background: #ffffe0;
+}
+
+.catalog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  padding: 2px;
+  border-top-right-radius: 9px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 201;
+  background-color: #6188b8;
+}
+
+.catalog button {
+  display: block;
+  width: 280px !important;
+  height: auto;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: #7c9dde; /* -синий */
+  border: 2px solid #3158a7;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+  margin: 5px auto;
+}
+
+.catalog-icon {
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 30px;
+  color: black;
+}
+
+.catalog button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  border-radius: 8px;
+  height: 100%;
+  background: #ffffe0;
+
+  transition: all 0.3s;
+}
+.catalog button span {
+  position: relative;
+  z-index: 2;
+}
+.catalog button:hover {
+  color: black;
+  font-size: 19px;
+}
+.catalog button:hover:after {
+  width: 100%;
+}
+
+/* Popup для подкатегорий */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 365px; /* Расположение рядом с каталогом */
+  width: 300px;
+  height: 100%;
+  border: 2px solid #688ebd; /* Установлена  */
+  background-color: #688ebd; /* Темно-синий */
+
+  z-index: 202;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top-right-radius: 9px;
+}
+
+.popupTitle {
+  color: #ffffe0;
+
+  margin-bottom: 5px;
+}
+.popup button {
+  background-color: #91ade5; /* Светло-синий */
+  width: 245px;
+  margin: 5px;
+  height: auto;
+}
+.popup h2 {
+  margin-top: 50px;
+}
+
+.clobutton {
+  cursor: pointer;
+  color: #ffffe0;
+  float: right;
+  font-size: 30px;
+}
+.popup ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.popup li {
+  margin-bottom: 15px;
+  border-radius: 9px;
+  width: 350px;
+  height: 100%;
+}
+/*КОНЕЦ КАТАЛОГА */
